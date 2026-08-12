@@ -1,0 +1,425 @@
+{
+    "programs": [
+        {
+            "fingerprint": "1cd3d8bb7e7571839dd39a01cf6fb0d04eb6ac107f51e9c6beff6297dd59cb3b",
+            "metadata": {
+                "name": "Test Program A",
+                "category": "test"
+            }
+        },
+        {
+            "fingerprint": "00dd375cde8dd6ecc7652725b6ff5651d8fe0dc3b923c8e38cb1da7741bff1ea",
+            "metadata": {
+                "name": "Test Program C",
+                "category": "test"
+            }
+        },
+        {
+            "fingerprint": "d495b267002b4530b77dc08c362754b92bcc89810df9e7e694ea659cad37beb4",
+            "metadata": {
+                "category": "network",
+                "input": "network_input",
+                "functions": [
+                    "calculate_subnet"
+                ],
+                "output": "success_output"
+            }
+        },
+        {
+            "fingerprint": "301fda6c396ac38b8cba7d87b3da7358ff9e09c492d456734db34470c19e5ee3",
+            "metadata": {
+                "category": "network",
+                "input": "network_input",
+                "functions": [
+                    "calculate_subnet"
+                ],
+                "output": "warning_output"
+            }
+        },
+        {
+            "fingerprint": "911f00edff348a3795e766f33c449818d7cf98d5834f011b428b0f6a98939331",
+            "metadata": {
+                "name": "resolve_hostname",
+                "category": "network",
+                "input": "hostname_input",
+                "functions": [
+                    "resolve_hostname"
+                ],
+                "output": "warning_output",
+                "path": "programs\\network\\resolve_hostname"
+            }
+        },
+        {
+            "fingerprint": "9656619e5eb647f6a2f2bf36430cbf2c2066a7a16bbe26a95e7daa44570c8abf",
+            "metadata": {
+                "name": "encode_base64_hash_text",
+                "category": "cryptography",
+                "input": "text_input",
+                "functions": [
+                    "encode_base64",
+                    "hash_text"
+                ],
+                "output": "success_output",
+                "path": "programs\\cryptography\\encode_base64_hash_text"
+            }
+        },
+        {
+            "fingerprint": "606475b402697b077ac53c91bd3a7d5c1fc97fe1a867768e2379b7f6858d3653",
+            "metadata": {
+                "name": "hash_text_encode_base64",
+                "category": "cryptography",
+                "input": "text_input",
+                "functions": [
+                    "hash_text",
+                    "encode_base64"
+                ],
+                "output": "simple_output",
+                "path": "programs\\cryptography\\hash_text_encode_base64"
+            }
+        },
+        {
+            "fingerprint": "3debb16d418fd2f9335b8d1664e40e521a0b21667bb836e545443b235c12c432",
+            "metadata": {
+                "name": "extract_urls",
+                "category": "web_security",
+                "input": "text_input",
+                "functions": [
+                    "extract_urls"
+                ],
+                "output": "simple_output",
+                "path": "programs\\web_security\\extract_urls"
+            }
+        },
+        {
+            "fingerprint": "f3e7d137450b1e8127e97108e9fbdc8574112ca50c5c30ebf32ec1306c9c92f3",
+            "metadata": {
+                "name": "decode_base64_1e6ca245",
+                "category": "cryptography",
+                "input": "encoded_text_input",
+                "functions": [
+                    "decode_base64"
+                ],
+                "output": "warning_output",
+                "path": "programs\\cryptography\\decode_base64_1e6ca245"
+            }
+        },
+        {
+            "fingerprint": "149a5da1a7c0cdc7f367c8f79fe0b4fc10dbce31643ee21c8e7b0d256c13f3c2",
+            "metadata": {
+                "name": "hash_file_2e7fe61e",
+                "category": "forensics",
+                "input": "file_input",
+                "functions": [
+                    "hash_file"
+                ],
+                "output": "simple_output",
+                "path": "programs\\forensics\\hash_file_2e7fe61e"
+            }
+        },
+        {
+            "fingerprint": "0700462d403f40b16b3e99cd8ce99072bec0acc92d1cfbaff9d0428c7ef8f0d1",
+            "metadata": {
+                "name": "file_permissions_e02d5a7e",
+                "category": "system_security",
+                "input": "file_input",
+                "functions": [
+                    "file_permissions"
+                ],
+                "output": "simple_output",
+                "path": "programs\\system_security\\file_permissions_e02d5a7e"
+            }
+        },
+        {
+            "fingerprint": "24510e62d8f17a4242858a40d895895cb1137e28daae857e506b1ea5a4c16503",
+            "metadata": {
+                "name": "calculate_subnet_1f07ce6a",
+                "category": "network",
+                "input": "network_input",
+                "functions": [
+                    "calculate_subnet"
+                ],
+                "output": "simple_output",
+                "path": "programs\\network\\calculate_subnet_1f07ce6a"
+            }
+        },
+        {
+            "fingerprint": "41a08f93b962376d03ca18e704729d87e0c8c03493c9eceda62dfd5c47b8997d",
+            "metadata": {
+                "name": "file_permissions_72f7a908",
+                "category": "system_security",
+                "input": "file_input",
+                "functions": [
+                    "file_permissions"
+                ],
+                "output": "success_output",
+                "path": "programs\\system_security\\file_permissions_72f7a908"
+            }
+        },
+        {
+            "fingerprint": "e34a9915ba4492cb445b6c6eeb05b805cb32ad20714dfe0a73a6e7d4cc107530",
+            "metadata": {
+                "name": "extract_urls_3b6f6523",
+                "category": "web_security",
+                "input": "text_input",
+                "functions": [
+                    "extract_urls"
+                ],
+                "output": "warning_output",
+                "path": "programs\\web_security\\extract_urls_3b6f6523"
+            }
+        },
+        {
+            "fingerprint": "7b09b4fdc7e69e31009574efbd657155ff13d6527d142c7f99d921de81fafdfe",
+            "metadata": {
+                "name": "calculate_entropy_109ce895",
+                "category": "forensics",
+                "input": "bytes_input",
+                "functions": [
+                    "calculate_entropy"
+                ],
+                "output": "success_output",
+                "path": "programs\\forensics\\calculate_entropy_109ce895"
+            }
+        },
+        {
+            "fingerprint": "26ce38378e48a4a3ec3b90e0b7b0f8c0b6996d041665c19b1e046d07006d6c81",
+            "metadata": {
+                "name": "encode_base64_f6d12654",
+                "category": "cryptography",
+                "input": "text_input",
+                "functions": [
+                    "encode_base64"
+                ],
+                "output": "simple_output",
+                "path": "programs\\cryptography\\encode_base64_f6d12654"
+            }
+        },
+        {
+            "fingerprint": "9c0cb0b97dd44b4b6c3fc7a77d74b6057996ae785467923b4c3e90099e3e4736",
+            "metadata": {
+                "name": "extract_urls_bbd56bbf",
+                "category": "web_security",
+                "input": "text_input",
+                "functions": [
+                    "extract_urls"
+                ],
+                "output": "success_output",
+                "path": "programs\\web_security\\extract_urls_bbd56bbf"
+            }
+        },
+        {
+            "fingerprint": "7a76c3c30f48d1890073cada9ac1670ca655293e5618d95dbd7d5c0e53e2ebba",
+            "metadata": {
+                "name": "resolve_hostname_validate_ip_39b002b0",
+                "category": "network",
+                "input": "hostname_input",
+                "functions": [
+                    "resolve_hostname",
+                    "validate_ip"
+                ],
+                "output": "success_output",
+                "path": "programs\\network\\resolve_hostname_validate_ip_39b002b0"
+            }
+        },
+        {
+            "fingerprint": "bd31b59c488dcb23feee5c08ae50917911f595b32a443a9ff3bd87a6adefae7a",
+            "metadata": {
+                "name": "calculate_subnet_83cecd38",
+                "category": "network",
+                "input": "network_input",
+                "functions": [
+                    "calculate_subnet"
+                ],
+                "output": "key_value_output",
+                "path": "programs\\network\\calculate_subnet_83cecd38"
+            }
+        },
+        {
+            "fingerprint": "301c93f7e269c355acbfbca2b1893bbb1aca2836f5abca6c5bc2c02099288d8f",
+            "metadata": {
+                "name": "encode_base64_decode_base64_hash_text_219aa15a",
+                "category": "cryptography",
+                "input": "text_input",
+                "functions": [
+                    "encode_base64",
+                    "decode_base64",
+                    "hash_text"
+                ],
+                "output": "success_output",
+                "path": "programs\\cryptography\\encode_base64_decode_base64_hash_text_219aa15a"
+            }
+        },
+        {
+            "fingerprint": "021f0d63116a6023611212e85f924de5f1fe485a92479426ebc19b5361530c1d",
+            "metadata": {
+                "name": "calculate_entropy_5610c58c",
+                "category": "forensics",
+                "input": "bytes_input",
+                "functions": [
+                    "calculate_entropy"
+                ],
+                "output": "simple_output",
+                "path": "programs\\forensics\\calculate_entropy_5610c58c"
+            }
+        },
+        {
+            "fingerprint": "4369dce85d2a85e493de867a8f3cfeb3ac6f525002b298554eaa2b6fdc830272",
+            "metadata": {
+                "name": "decode_base64_a45eceb1",
+                "category": "cryptography",
+                "input": "encoded_text_input",
+                "functions": [
+                    "decode_base64"
+                ],
+                "output": "simple_output",
+                "path": "programs\\cryptography\\decode_base64_a45eceb1"
+            }
+        },
+        {
+            "fingerprint": "e405c9f5bd4344bde5569f989a72c069967a9190bcdd82f7224dfaf48f9a4302",
+            "metadata": {
+                "name": "resolve_hostname_f6b558c1",
+                "category": "network",
+                "input": "hostname_input",
+                "functions": [
+                    "resolve_hostname"
+                ],
+                "output": "success_output",
+                "path": "programs\\network\\resolve_hostname_f6b558c1"
+            }
+        },
+        {
+            "fingerprint": "16edc0d631eab59feb33020d08849fd7e6864032e21fd56222cfa19c0a56f368",
+            "metadata": {
+                "name": "encode_base64_decode_base64_hash_text_a90baecd",
+                "category": "cryptography",
+                "input": "text_input",
+                "functions": [
+                    "encode_base64",
+                    "decode_base64",
+                    "hash_text"
+                ],
+                "output": "warning_output",
+                "path": "programs\\cryptography\\encode_base64_decode_base64_hash_text_a90baecd"
+            }
+        },
+        {
+            "fingerprint": "a56db1f205d3604adf20a663c4d8aaa108d50d7f61a194fbd81050910c6114ab",
+            "metadata": {
+                "name": "calculate_subnet_04d749a9",
+                "category": "network",
+                "input": "network_input",
+                "functions": [
+                    "calculate_subnet"
+                ],
+                "output": "key_value_output",
+                "path": "programs\\network\\calculate_subnet_04d749a9"
+            }
+        },
+        {
+            "fingerprint": "e1d11c891afb30f2df3cd287089f18a70ce99a1481bd84a7df50d7f17df22f35",
+            "metadata": {
+                "name": "extract_urls_7af76c64",
+                "category": "web_security",
+                "input": "text_input",
+                "functions": [
+                    "extract_urls"
+                ],
+                "output": "simple_output",
+                "path": "programs\\web_security\\extract_urls_7af76c64"
+            }
+        },
+        {
+            "fingerprint": "b4cf5f4a885758b47f8052cbdf26186bac685016b719a2b5eb9348fb5b84fa49",
+            "metadata": {
+                "name": "resolve_hostname_validate_ip_24faf480",
+                "category": "network",
+                "input": "hostname_input",
+                "functions": [
+                    "resolve_hostname",
+                    "validate_ip"
+                ],
+                "output": "warning_output",
+                "path": "programs\\network\\resolve_hostname_validate_ip_24faf480"
+            }
+        },
+        {
+            "fingerprint": "d0b55b1f5eeb4f90c583b5fbcee1967997ca54a8eb4697161375b7fad8f5deee",
+            "metadata": {
+                "name": "hash_text_d319eb57",
+                "category": "cryptography",
+                "input": "text_input",
+                "functions": [
+                    "hash_text"
+                ],
+                "output": "success_output",
+                "path": "programs\\cryptography\\hash_text_d319eb57"
+            }
+        },
+        {
+            "fingerprint": "44dbf50bdd0dd986980fae54f31565a639bd655d678a02c1bfd53af728ba942d",
+            "metadata": {
+                "name": "hash_text_4f727a34",
+                "category": "cryptography",
+                "input": "text_input",
+                "functions": [
+                    "hash_text"
+                ],
+                "output": "warning_output",
+                "path": "programs\\cryptography\\hash_text_4f727a34"
+            }
+        },
+        {
+            "fingerprint": "714cd9337c036c33058f114620eac6c20780ca829c957bcb5fed7d2550fd672e",
+            "metadata": {
+                "name": "file_permissions_3753df80",
+                "category": "system_security",
+                "input": "file_input",
+                "functions": [
+                    "file_permissions"
+                ],
+                "output": "warning_output",
+                "path": "programs\\system_security\\file_permissions_3753df80"
+            }
+        },
+        {
+            "fingerprint": "fdbe0358fce8031eaccfc1212a7753827b9aad9cc7bff4ebb10234eb8fe64cc6",
+            "metadata": {
+                "name": "extract_urls_966edc49",
+                "category": "web_security",
+                "input": "text_input",
+                "functions": [
+                    "extract_urls"
+                ],
+                "output": "warning_output",
+                "path": "programs\\web_security\\extract_urls_966edc49"
+            }
+        },
+        {
+            "fingerprint": "4bb4f94ea43becfa6d9ac7355ad582f6c3b7d61cf68544f4115d4c83bcd27c3c",
+            "metadata": {
+                "name": "file_permissions_4909d103",
+                "category": "system_security",
+                "input": "file_input",
+                "functions": [
+                    "file_permissions"
+                ],
+                "output": "success_output",
+                "path": "programs\\system_security\\file_permissions_4909d103"
+            }
+        },
+        {
+            "fingerprint": "1e1fd68a936623b69b705d4b60e8e67f8233b3ab7193ef6361165e711f79ce47",
+            "metadata": {
+                "name": "decode_base64_2968cef8",
+                "category": "cryptography",
+                "input": "encoded_text_input",
+                "functions": [
+                    "decode_base64"
+                ],
+                "output": "simple_output",
+                "path": "programs\\cryptography\\decode_base64_2968cef8"
+            }
+        }
+    ]
+}

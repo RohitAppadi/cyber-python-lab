@@ -1,0 +1,53 @@
+name: Generate Cybersecurity Program
+
+on:
+  workflow_dispatch:
+
+  schedule:
+    - cron: "0 18 * * *"
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Verify Python
+        run: python --version
+
+      - name: Compile generator
+        run: python -m compileall generator
+
+      - name: Run generator
+        run: python -m generator.main
+
+      - name: Configure Git
+        run: |
+          git config user.name "Rohit Appadi"
+          git config user.email "132917495+RohitAppadi@users.noreply.github.com"
+
+      - name: Commit generated program
+        run: |
+          git add programs
+
+          if git diff --cached --quiet; then
+            echo "No new program was generated."
+            exit 0
+          fi
+
+          git commit -m "Generate new cybersecurity program"
+
+      - name: Push generated program
+        run: git push
