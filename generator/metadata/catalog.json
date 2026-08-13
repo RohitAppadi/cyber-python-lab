@@ -420,6 +420,20 @@
                 "output": "simple_output",
                 "path": "programs\\cryptography\\decode_base64_2968cef8"
             }
+        },
+        {
+            "fingerprint": "cf7ab7e0d94a769f89c7a14a99ae35997eda8f9bd87c7f813af91342bcbb0a90",
+            "metadata": {
+                "name": "extract_urls_count_urls_379b2a06",
+                "category": "web_security",
+                "input": "text_input",
+                "functions": [
+                    "extract_urls",
+                    "count_urls"
+                ],
+                "output": "warning_output",
+                "path": "programs\\web_security\\extract_urls_count_urls_379b2a06"
+            }
         }
     ]
 }
